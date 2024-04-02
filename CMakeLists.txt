@@ -117,6 +117,8 @@ if (GAMEPAD_ENABLE_SHARED OR GAMEPAD_ENABLE_STATIC)
             ./include/gamepad/hook-xinput.hpp
             ./include/gamepad/log.hpp
             DESTINATION include/gamepad)
+        install(FILES ./include/json/json11.h
+            DESTINATION include/json)
     endif()
 endif()
 
