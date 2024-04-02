@@ -28,8 +28,8 @@ class Gamepad(ConanFile):
         print("package")
         cmake = CMake(self)
         cmake.install()
-        # self.copy("*.hpp", dst="include")
-        # self.copy("*.h",   dst="include")
+        # self.copy("*.hpp", dst="") 
+        # self.copy("*.h",   dst="")
         # self.copy("*.a", dst="lib")
 
     
