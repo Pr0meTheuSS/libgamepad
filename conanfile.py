@@ -26,9 +26,11 @@ class Gamepad(ConanFile):
 
     def package(self):
         print("package")
-        self.copy("*.hpp", dst="include")
-        self.copy("*.h",   dst="include")
-        self.copy("*.a", dst="lib")
+        cmake = CMake(self)
+        cmake.install()
+        # self.copy("*.hpp", dst="include")
+        # self.copy("*.h",   dst="include")
+        # self.copy("*.a", dst="lib")
 
     
     def package_info(self):
