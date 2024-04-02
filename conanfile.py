@@ -16,7 +16,7 @@ class Gamepad(ConanFile):
     def source(self):
         print("source")
         git = tools.Git(self.source_folder)
-        git.clone("https://github.com/univrsal/libgamepad")
+        git.clone("https://github.com/Pr0meTheuSS/libgamepad")
     
     def build(self):
         print("build")
